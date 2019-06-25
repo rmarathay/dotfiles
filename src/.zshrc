@@ -208,9 +208,9 @@ is-at-least 4.3.12 && () {
     }
 }
 
-export KUBE_EDITOR="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code -w"
-
-# Make gems available in path
+export KUBE_EDITOR="vim"
+export KUBECONFIG=~/.kube/metadata-dev
+#Make gems available in path
 GEM_BIN=~/.gem/ruby/2.5.0/bin
 export PATH=$GEM_BIN:$PATH
 
